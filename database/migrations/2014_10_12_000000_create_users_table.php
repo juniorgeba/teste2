@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('cpf')->nullable();
             $table->string('email');
             $table->integer('unidade')->nullable();
-            $table->string('status')->default('ativo'); //inativo
-            $table->string('perfil')->default('user'); //superuser = Coordenador  root = Vigilância
+            $table->string('status')->default('ativo'); //ativo | inativo
+            $table->string('perfil')->default('user'); //user= User | superuser = Coordenador | root = Vigilância
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
